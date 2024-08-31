@@ -1,9 +1,9 @@
 <template>
-  <Scheduler :configurationId="content.configurationId" :key="updateComponent" />
+  <SchedulerEditor :configurationId="content.configurationId" :key="updateComponent" />
 </template>
 
 <script setup>
-import Scheduler from './nylas/Scheduler.vue'
+import SchedulerEditor from './nylas/SchedulerEditor.vue'
 import { ref, watch } from 'vue'
 const props = defineProps({
   content: { type: Object, required: true },
