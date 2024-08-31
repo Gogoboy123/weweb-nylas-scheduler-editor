@@ -21,12 +21,5 @@ export default {
             defaultValue: '',
             bindable: true,
         },
-        urlDomain: {
-            label: {
-                en: 'Url domain',
-            },
-            type: 'Text',
-            defaultValue: '',
-        },
     },
 };

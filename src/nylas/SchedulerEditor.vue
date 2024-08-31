@@ -13,10 +13,6 @@ const props = defineProps({
         type: String,
         required: true
     },
-    urlDomain: {
-        type: String,
-        required: true
-    }
 })
 
 onBeforeMount(() => {
@@ -33,10 +29,10 @@ onBeforeMount(() => {
 
 onMounted(() => {
     const nylasSchedulerEditor = wwLib.getFrontDocument().querySelector('nylas-scheduler-editor')
-    nylasSchedulerEditor.schedulerPreviewLink = `${props.urlDomain}/?config_id=${props.configurationId}`
+    nylasSchedulerEditor.schedulerPreviewLink = `${window.location.origin}/?config_id=${props.configurationId}`
     nylasSchedulerEditor.nylasSessionsConfig = {
         clientId: props.clientId,
-        redirectUri: `${props.urlDomain}/scheduler-editor`,
+        redirectUri: `${window.location.href}`,
         domain: 'https://api.us.nylas.com/v3',
         hosted: true,
         accessType: 'offline'
