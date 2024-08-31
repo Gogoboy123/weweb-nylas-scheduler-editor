@@ -5,10 +5,6 @@
 <script setup>
 import { onMounted, onBeforeMount } from 'vue'
 const props = defineProps({
-    configurationId: {
-        type: String,
-        required: true
-    },
     clientId: {
         type: String,
         required: true
@@ -29,18 +25,12 @@ onBeforeMount(() => {
 
 onMounted(() => {
     const nylasSchedulerEditor = wwLib.getFrontDocument().querySelector('nylas-scheduler-editor')
-    nylasSchedulerEditor.schedulerPreviewLink = `${window.location.origin}/?config_id=${props.configurationId}`
     nylasSchedulerEditor.nylasSessionsConfig = {
         clientId: props.clientId,
         redirectUri: `${window.location.origin}`,
         domain: 'https://api.us.nylas.com/v3',
         hosted: true,
         accessType: 'offline'
-    }
-    nylasSchedulerEditor.defaultSchedulerConfigState = {
-        selectedConfiguration: {
-            requires_session_auth: false
-        }
     }
 })
 </script>

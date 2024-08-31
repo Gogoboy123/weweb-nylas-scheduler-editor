@@ -1,5 +1,5 @@
 <template>
-  <SchedulerEditor :configurationId="content.configurationId" :clientId="content.clientId" :key="updateComponent" />
+  <SchedulerEditor :clientId="content.clientId" :key="updateComponent" />
 </template>
 
 <script setup>

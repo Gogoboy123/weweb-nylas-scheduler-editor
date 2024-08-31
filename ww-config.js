@@ -5,14 +5,6 @@ export default {
         },
     },
     properties: {
-        configurationId: {
-            label: {
-                en: 'Configuration id',
-            },
-            type: 'Text',
-            defaultValue: '',
-            bindable: true,
-        },
         clientId: {
             label: {
                 en: 'Client id',
