@@ -32,7 +32,7 @@ onMounted(() => {
     nylasSchedulerEditor.schedulerPreviewLink = `${window.location.origin}/?config_id=${props.configurationId}`
     nylasSchedulerEditor.nylasSessionsConfig = {
         clientId: props.clientId,
-        redirectUri: `${window.location.href}`,
+        redirectUri: `${window.location.href}/scheduler-editor`,
         domain: 'https://api.us.nylas.com/v3',
         hosted: true,
         accessType: 'offline'
