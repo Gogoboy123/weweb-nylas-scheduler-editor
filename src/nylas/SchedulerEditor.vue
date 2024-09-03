@@ -27,7 +27,7 @@ onMounted(() => {
     const nylasSchedulerEditor = wwLib.getFrontDocument().querySelector('nylas-scheduler-editor')
     nylasSchedulerEditor.nylasSessionsConfig = {
         clientId: props.clientId,
-        redirectUri: `${window.location.origin}`,
+        redirectUri: props.redirectUri || window.location.href,
         domain: 'https://api.us.nylas.com/v3',
         hosted: true,
         accessType: 'offline'

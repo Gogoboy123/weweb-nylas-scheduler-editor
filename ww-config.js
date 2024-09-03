@@ -13,5 +13,13 @@ export default {
             defaultValue: '',
             bindable: true,
         },
+        redirectUri: {
+            label: {
+                en: 'Redirect url',
+            },
+            type: 'Text',
+            defaultValue: '',
+            bindable: true,
+        },
     },
 };
