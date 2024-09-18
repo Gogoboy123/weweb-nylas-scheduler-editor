@@ -21,5 +21,13 @@ export default {
             defaultValue: '',
             bindable: true,
         },
+        schedulerPreviewLink: {
+            label: {
+                en: 'Scheduler preview link',
+            },
+            type: 'Text',
+            defaultValue: '',
+            bindable: true,
+        },
     },
 };

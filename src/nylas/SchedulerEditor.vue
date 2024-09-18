@@ -9,6 +9,14 @@ const props = defineProps({
         type: String,
         required: true
     },
+    redirectUri: {
+        type: String,
+        required: true
+    },
+    schedulerPreviewLink: {
+        type: String,
+        required: true
+    },
 })
 
 onBeforeMount(() => {
@@ -32,5 +40,6 @@ onMounted(() => {
         hosted: true,
         accessType: 'offline'
     }
+    nylasSchedulerEditor.schedulerPreviewLink = props.schedulerPreviewLink
 })
 </script>
