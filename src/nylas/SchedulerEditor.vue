@@ -18,7 +18,7 @@ const props = defineProps({
         required: true
     },
     requiresSlug: {
-        type: boolean,
+        type: String,
         required: true
     },
 })
