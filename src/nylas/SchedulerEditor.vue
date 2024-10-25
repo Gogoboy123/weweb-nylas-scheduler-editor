@@ -17,6 +17,10 @@ const props = defineProps({
         type: String,
         required: true
     },
+    requiresSlug: {
+        type: boolean,
+        required: true
+    },
 })
 
 onBeforeMount(() => {
@@ -41,5 +45,6 @@ onMounted(() => {
         accessType: 'offline'
     }
     nylasSchedulerEditor.schedulerPreviewLink = props.schedulerPreviewLink
+    nylasSchedulerEditor.requiresSlug = props.requiresSlug
 })
 </script>

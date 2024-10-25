@@ -29,5 +29,13 @@ export default {
             defaultValue: '',
             bindable: true,
         },
+        requiresSlug: {
+            label: {
+                en: 'requiresSlug',
+            },
+            type: 'boolean',
+            defaultValue: false,
+            bindable: true,
+        },
     },
 };

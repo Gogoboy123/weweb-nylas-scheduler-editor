@@ -1,5 +1,5 @@
 <template>
-  <SchedulerEditor :clientId="content.clientId" :redirectUri="content.redirectUri"
+  <SchedulerEditor :clientId="content.clientId" :redirectUri="content.redirectUri" :requiresSlug="content.requiresSlug"
     :schedulerPreviewLink="content.schedulerPreviewLink" :key="updateComponent" />
 </template>
 
