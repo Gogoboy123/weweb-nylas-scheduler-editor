@@ -47,7 +47,7 @@ onMounted(() => {
     nylasSchedulerEditor.schedulerPreviewLink = props.schedulerPreviewLink
     nylasSchedulerEditor.requiresSlug = props.requiresSlug
 
-    schedulerEditor.defaultSchedulerConfigState = {
+    nylasSchedulerEditor.defaultSchedulerConfigState = {
         selectedConfiguration: {
             scheduler: { // The callback URLs to be set in email notifications
                 rescheduling_url: `${window.location.origin}/reschedule/:booking_ref`, // The URL of the email notification includes the booking reference
